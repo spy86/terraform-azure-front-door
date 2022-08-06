@@ -96,6 +96,6 @@ resource "azurerm_frontdoor" "main" {
     }
   }
   depends_on = [
-    "azurerm_frontdoor_firewall_policy.main"
+    [ azurerm_frontdoor_firewall_policy.main ]
   ]
 }

@@ -32,6 +32,6 @@ resource "azurerm_monitor_diagnostic_setting" "main" {
   }
 
 depends_on = [
-  "azurerm_frontdoor.main"
+  [ azurerm_frontdoor.main ]
 ]
 }
